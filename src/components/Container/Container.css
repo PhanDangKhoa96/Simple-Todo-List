@@ -1,0 +1,97 @@
+.container {
+    background-color: #38404b;
+    color: #94adcf;
+    width: 80vw;
+    max-height: 80vh;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 65px;
+    padding: 74px 80px 120px;
+    display: grid;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 80px;
+    overflow-y: auto;
+}
+
+.container.light {
+    background-color: beige;
+    color: #38404b;
+}
+
+.container.light input {
+    background-color: beige;
+    color: #38404b;
+}
+
+.container.light input::placeholder {
+    color: #38404b;
+}
+
+.container::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.toggle-button {
+    cursor: pointer;
+    justify-self: end;
+    display: flex;
+    column-gap: 4px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.toggle-button i:nth-child(2) {
+    font-size: 30px;
+}
+
+.task-title {
+    font-size: 28px;
+    margin-bottom: 48px;
+}
+
+.task-wrapper {
+    display: grid;
+    gap: 48px;
+}
+
+
+.input {
+    justify-self: center;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 1px 1px 2px rgba(66, 75, 88, 0.3), -1px -1px 2px rgba(46, 53, 62, 0.5), inset -3px 3px 6px rgba(46, 53, 62, 0.2), inset 3px -3px 6px rgba(46, 53, 62, 0.2), inset -3px -3px 6px rgba(66, 75, 88, 0.9), inset 3px 3px 8px rgba(46, 53, 62, 0.9);
+    border-radius: 16px;
+    position: relative;
+    padding-right: 50px;
+}
+
+.input input {
+    background-color: #38404b;
+    color: #94ADCF;
+    width: 100%;
+}
+
+
+.input input::placeholder {
+    color: #94ADCF;
+}
+
+.input i {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .task-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
